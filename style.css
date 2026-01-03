@@ -163,11 +163,23 @@ a {
   .wrapper {
     min-height: 100dvh;
   }
+
+  .btn{
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 400px){
   html {
     font-size: 10px;
+  }
+
+  .game__inner{
+    gap: 50px;
+  }
+
+  .game__board{
+    gap: 50px;
   }
 
   .game__cards{
