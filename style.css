@@ -159,19 +159,15 @@ a {
   html {
     font-size: 14px;
   }
+
+  .wrapper {
+    min-height: 100dvh;
+  }
 }
 
 @media (max-width: 400px){
   html {
     font-size: 10px;
-  }
-
-  .hero{
-    padding: 20px 0;
-  }
-
-  .game__inner {
-    gap: 20px;
   }
 
   .game__cards{
