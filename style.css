@@ -1,0 +1,184 @@
+:root {
+  --main-color: #4ECCA3;
+  --bg-color: #393E46;
+  --white-color: #fff;
+  --container-width: 1200px;
+  --container-spacing: 20px;
+  --main-font: 'Indie Flower', cursive;
+  --title-font: 'Lobster', cursive;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  background: var(--bg-color);
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-spacing) * 2);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-spacing);
+}
+
+/* Headings */
+
+.title {
+  font-weight: 900;
+  font-family: var(--title-font);
+}
+
+.title--lg {
+  font-size: 2rem;
+}
+
+.title--md {
+  font-size: 5rem;
+}
+
+.title--sm {
+  font-size: 2rem;
+}
+
+/* Texts */
+
+.text {
+  font-family: var(--main-font);
+  color: var(--white-color);
+}
+
+/* Buttons */
+
+.btn{
+  font-family: var(--title-font);
+  background: var(--main-color);
+  color: var(--white-color);
+  border: none;
+  font-size: 2rem;
+  padding: 2px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.main{
+  width: 100%;
+}
+
+.hero{
+  padding: 30px 0;
+}
+
+.hero__inner{
+  display: flex;
+  justify-content: center;
+}
+
+.game__inner{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.game__title{
+  text-shadow: 5px 0 #232931;
+}
+
+.game__board{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.game__cards{
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.game__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 0 1 240px;
+}
+
+.game__image{
+  display: block;
+  width: 100%;
+}
+
+.game__btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.game__btn:hover {
+  transform: scale(0.95);
+}
+
+.footer{
+  margin-top: auto;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 500px){
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px){
+  html {
+    font-size: 10px;
+  }
+
+  .hero{
+    padding: 20px 0;
+  }
+
+  .game__inner {
+    gap: 20px;
+  }
+
+  .game__cards{
+    gap: 20px;
+  }
+
+  .game__card{
+    flex: 0 1 150px;
+  }
+}
